@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0079bf;
+    font-family: 'Roboto', Helvetica, sans-serif;
+
+    .container {
+        column-gap: 8px;
+    }
+}
+
+.list {
+    background-color: #ebecf0;
+    width: 272px;
+    position: relative;
+    overflow: hidden;
+
+    &__header {
+        padding: 10px 8px;
+    }
+
+    &__title {
+        padding: 4px 8px;
+        color: #172b4d;
+    }
+
+    &__menu {
+        a {
+            min-width: 32px;
+            min-height: 32px;
+            opacity: 0.5;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #091e4214;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__cards {
+        padding: 0 8px;
+
+        .card-item {
+            padding: 6px 8px 2px;
+            box-shadow: 0 1px 0 #091e4240;
+            margin-bottom: 8px;
+            color: #62698b;
+            background-color: white;
+            font-size: 0.95rem;
+
+            &:hover {
+                background-color: #f4f5f7;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__composer {
+        padding: 2px 8px 8px;
+
+        .card-composer {
+            padding: 4px 8px;
+
+            &:hover {
+                background-color: #091e4214;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__use-template {
+        min-width: 32px;
+        min-height: 32px;
+        opacity: 0.5;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #091e4214;
+            opacity: 1;
+        }
+    }
+
+    &__draggable {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.dad {
+    &-placeholder {
+        &-list {
+            background-color: #0000001f;
+        }
+
+        &-card {
+            margin-bottom: 8px;
+            background-color: #091e420a;
+        }
+    }
+
+    &-clone {
+        &-list {
+            box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+            transform: rotate(4deg);
+        }
+
+        &-card {
+            transform: rotate(4deg);
+            box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0079bf;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body .container {
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.list {
+  background-color: #ebecf0;
+  width: 272px;
+  position: relative;
+  overflow: hidden;
+}
+
+.list__header {
+  padding: 10px 8px;
+}
+
+.list__title {
+  padding: 4px 8px;
+  color: #172b4d;
+}
+
+.list__menu a {
+  min-width: 32px;
+  min-height: 32px;
+  opacity: 0.5;
+}
+
+.list__menu a:hover {
+  cursor: pointer;
+  background-color: #091e4214;
+  opacity: 1;
+}
+
+.list__cards {
+  padding: 0 8px;
+}
+
+.list__cards .card-item {
+  padding: 6px 8px 2px;
+  -webkit-box-shadow: 0 1px 0 #091e4240;
+          box-shadow: 0 1px 0 #091e4240;
+  margin-bottom: 8px;
+  color: #62698b;
+  background-color: white;
+  font-size: 0.95rem;
+}
+
+.list__cards .card-item:hover {
+  background-color: #f4f5f7;
+  cursor: pointer;
+}
+
+.list__composer {
+  padding: 2px 8px 8px;
+}
+
+.list__composer .card-composer {
+  padding: 4px 8px;
+}
+
+.list__composer .card-composer:hover {
+  background-color: #091e4214;
+  cursor: pointer;
+}
+
+.list__use-template {
+  min-width: 32px;
+  min-height: 32px;
+  opacity: 0.5;
+}
+
+.list__use-template:hover {
+  cursor: pointer;
+  background-color: #091e4214;
+  opacity: 1;
+}
+
+.list__draggable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dad-placeholder-list {
+  background-color: #0000001f;
+}
+
+.dad-placeholder-card {
+  margin-bottom: 8px;
+  background-color: #091e420a;
+}
+
+.dad-clone-list {
+  -webkit-box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+          box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.dad-clone-card {
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+  -webkit-box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+          box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214 !important;
+}
+/*# sourceMappingURL=style.css.map */
