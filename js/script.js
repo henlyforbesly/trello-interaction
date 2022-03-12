@@ -26,6 +26,12 @@ $('.list__cards').dad({
     transition: 0,
 });
 
+$('.list__cards').on('dadDrop', (e, droppedElement) => {
+    console.log(
+        `Currently at list no: ${$(droppedElement).parents('.list').attr('id')}`
+    );
+});
+
 $('.container').dad({
     draggable: '.list__draggable',
     placeholderTemplate: '<div class="rounded-2"></div>',
